@@ -74,14 +74,19 @@
         <v-card-actions>
           <v-spacer />
           <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
+          <v-btn color="primary" nuxt to="/game"> Click for Game Page </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
   </v-row>
 </template>
 
-<script>
-export default {
-  name: 'IndexPage',
+<script lang="ts">
+import Vue from 'vue';
+import Component from "vue-class-component";
+
+@Component
+export default class IndexPage extends Vue {
+  name: string = 'IndexPage'
 }
 </script>
